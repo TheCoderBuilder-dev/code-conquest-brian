@@ -147,16 +147,42 @@ const TechStack = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Learning Journey */}
         <div className="text-center mt-16">
-          <div className="glass rounded-xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-primary">
+          <div className="glass rounded-xl p-8 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold mb-6 text-primary">
               Always Learning, Always Growing 📈
             </h3>
-            <p className="text-muted-foreground">
-              Currently diving deeper into AI/ML integration, cloud architecture, and exploring the latest in web3 development. 
-              The learning never stops! 🚀
-            </p>
+            
+            {/* Current Learning */}
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="text-left p-4 bg-muted/20 rounded-lg">
+                <h4 className="font-semibold text-accent mb-2">🧠 Currently Learning</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• AI/ML integration for web apps</li>
+                  <li>• Advanced cloud architecture patterns</li>
+                  <li>• Web3 & blockchain development</li>
+                  <li>• Mobile app development with React Native</li>
+                </ul>
+              </div>
+              <div className="text-left p-4 bg-muted/20 rounded-lg">
+                <h4 className="font-semibold text-fire mb-2">🎯 Next on the List</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• DevOps & CI/CD mastery</li>
+                  <li>• System design & architecture</li>
+                  <li>• Data science fundamentals</li>
+                  <li>• Startup & business strategy</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Personal Touch */}
+            <div className="border-t border-border/20 pt-4">
+              <p className="text-sm text-muted-foreground italic">
+                "The day you stop learning is the day you stop growing. At 18, I've got the whole world to explore!" 
+                <span className="text-primary">- Brian</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

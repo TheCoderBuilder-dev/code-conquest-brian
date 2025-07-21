@@ -94,8 +94,22 @@ const HeroSection = () => {
           "I build web apps that move things. And people."
         </p>
 
-        <div className="text-lg text-primary-glow mb-10 font-mono">
+        <div className="text-lg text-primary-glow mb-6 font-mono">
           18 years old • Aiming to be a millionaire by 22 🚀
+        </div>
+
+        {/* Human Touch - Quick Status */}
+        <div className="mb-8 glass rounded-lg p-4 max-w-md mx-auto">
+          <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium">Currently:</span>
+            </div>
+            <span className="text-sm text-primary">Building something epic</span>
+          </div>
+          <div className="text-xs text-muted-foreground text-center mt-2">
+            ☕ 4 coffees deep • 🎵 Lofi beats • 💻 In the zone
+          </div>
         </div>
 
         {/* CTA Buttons */}

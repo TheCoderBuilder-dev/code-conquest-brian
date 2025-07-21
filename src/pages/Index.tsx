@@ -4,6 +4,9 @@ import HeroSection from '@/components/HeroSection';
 import TechStack from '@/components/TechStack';
 import ProjectsSection from '@/components/ProjectsSection';
 import AboutSection from '@/components/AboutSection';
+import TerminalWidget from '@/components/TerminalWidget';
+import SpotifyWidget from '@/components/SpotifyWidget';
+import PersonalDashboard from '@/components/PersonalDashboard';
 
 const Index = () => {
   return (
@@ -43,6 +46,11 @@ const Index = () => {
           </div>
         </section>
       </main>
+
+      {/* Interactive Widgets */}
+      <TerminalWidget />
+      <SpotifyWidget />
+      <PersonalDashboard />
       
       {/* Footer */}
       <footer className="py-8 border-t border-border/20">

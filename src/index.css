@@ -217,4 +217,31 @@ All colors MUST be HSL for perfect theming.
   .rotate-slow {
     animation: rotate-slow 20s linear infinite;
   }
+
+  /* Random Human Touches */
+  .wobble {
+    animation: wobble 2s ease-in-out infinite;
+  }
+
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(1deg); }
+    75% { transform: rotate(-1deg); }
+  }
+
+  /* Slightly imperfect animations for human feel */
+  .human-float {
+    animation: human-float 4s ease-in-out infinite;
+  }
+
+  @keyframes human-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-8px) rotate(0.5deg); }
+    66% { transform: translateY(-12px) rotate(-0.5deg); }
+  }
+
+  /* Cursor effects */
+  .cursor-fun:hover {
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTAiIGZpbGw9IiMwMGZmZmYiLz4KPC9zdmc+'), auto;
+  }
 }

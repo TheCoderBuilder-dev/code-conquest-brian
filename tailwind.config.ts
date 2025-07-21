@@ -26,11 +26,16 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
+				},
+				fire: {
+					DEFAULT: 'hsl(var(--fire))',
+					foreground: 'hsl(var(--fire-foreground))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -62,6 +67,24 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-fire': 'var(--gradient-fire)',
+				'gradient-glass': 'var(--gradient-glass)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			fontFamily: {
+				'hero': 'var(--font-hero)',
+				'body': 'var(--font-body)'
+			},
+			animation: {
+				'float': 'float 6s ease-in-out infinite',
+				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+				'typing': 'typing 3s steps(30, end)',
+				'blink': 'blink 1s infinite',
+				'slide-up': 'slide-up 0.8s ease-out',
+				'rotate-slow': 'rotate-slow 20s linear infinite'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

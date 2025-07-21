@@ -2,41 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Brian's Futuristic Design System - Tesla x Iron Man Vibes 🔥 
+All colors MUST be HSL for perfect theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Galactic Dark Theme - Default */
+    --background: 222 84% 4%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 225 25% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 225 25% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cyber Blue Primary */
+    --primary: 201 100% 50%;
+    --primary-foreground: 222 84% 4%;
+    --primary-glow: 201 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Neon Accents */
+    --secondary: 280 100% 50%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 225 25% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 120 100% 50%;
+    --accent-foreground: 222 84% 4%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Fire Red for CTAs */
+    --fire: 0 100% 50%;
+    --fire-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 225 25% 15%;
+    --input: 225 25% 12%;
+    --ring: 201 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-fire: linear-gradient(135deg, hsl(var(--fire)), hsl(var(--accent)));
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(225 25% 8%));
+
+    /* Glow Effects */
+    --glow-primary: 0 0 20px hsl(var(--primary) / 0.5);
+    --glow-fire: 0 0 20px hsl(var(--fire) / 0.5);
+    --glow-accent: 0 0 20px hsl(var(--accent) / 0.5);
+
+    /* Animation Timings */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Typography */
+    --font-hero: 'Orbitron', 'Space Grotesk', monospace;
+    --font-body: 'Inter', 'SF Pro Display', system-ui;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +127,94 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-[var(--font-body)] overflow-x-hidden;
+  }
+
+  /* Custom Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: var(--glow-primary); }
+    50% { box-shadow: var(--glow-fire); }
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: hsl(var(--primary)); }
+  }
+
+  @keyframes slide-up {
+    from { 
+      opacity: 0; 
+      transform: translateY(30px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  /* Glassmorphism Effect */
+  .glass {
+    background: var(--gradient-glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--border) / 0.2);
+  }
+
+  /* Cyber Glow Effects */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+    transition: var(--transition-smooth);
+  }
+
+  .glow-primary:hover {
+    box-shadow: var(--glow-fire);
+  }
+
+  /* Hero Typography */
+  .hero-text {
+    font-family: var(--font-hero);
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Typing Animation */
+  .typing-animation {
+    display: inline-block;
+    font-family: 'Fira Code', monospace;
+    border-right: 2px solid hsl(var(--primary));
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink 1s infinite;
+  }
+
+  /* Floating Animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Scroll Animations */
+  .slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+
+  /* Rotating Globe */
+  .rotate-slow {
+    animation: rotate-slow 20s linear infinite;
   }
 }

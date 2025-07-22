@@ -10,10 +10,10 @@ const AboutSection = () => {
   const achievements = [
     { icon: "🎓", title: "KCSE A-", description: "Strong academic foundation" },
     { icon: "🏆", title: "Moringa Graduate", description: "Phase 1-4 Software Engineering" },
-    { icon: "🎯", title: "Strathmore Student", description: "Currently pursuing tech degree" },
+    { icon: "", title: "Strathmore Student", description: "Currently pursuing tech degree" },
     { icon: "📜", title: "GitHub Student Pack", description: "Access to premium dev tools" },
     { icon: "🔧", title: "Cisco IT Essentials", description: "Networking fundamentals certified" },
-    { icon: "📱", title: "1K+ Views", description: "Growing social media presence" }
+    { icon: "", title: "1K+ Views", description: "Growing social media presence" }
   ];
 
   const moringaPhases = [

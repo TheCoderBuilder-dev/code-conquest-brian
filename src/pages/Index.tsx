@@ -34,7 +34,7 @@ const Index = () => {
         <section id="contact" className="py-20 bg-gradient-to-b from-muted/10 to-background">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-bold hero-text mb-6">
-              Let's Build Something Epic 🚀
+              Let's Build Something Epic 
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Ready to turn your ideas into reality? Let's connect and create something amazing together.
@@ -56,7 +56,7 @@ const Index = () => {
       <footer className="py-8 border-t border-border/20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="text-muted-foreground">
-            © 2024 Brian Munene. Built with 🔥 and lots of coffee ☕
+            © 2024 Brian Munene. Built with  and lots of coffee 
           </p>
         </div>
       </footer>

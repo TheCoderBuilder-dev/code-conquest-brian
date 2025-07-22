@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Brian's Futuristic Design System - Tesla x Iron Man Vibes 🔥 
-All colors MUST be HSL for perfect theming.
-*/
 
 @layer base {
   :root {

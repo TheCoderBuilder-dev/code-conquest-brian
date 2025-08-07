@@ -75,7 +75,7 @@ const PersonalDashboard = () => {
       {/* Bottom Info */}
       <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 glass rounded-lg px-4 py-2">
         <div className="text-xs text-muted-foreground text-center">
-          🚀 Live from Nairobi • Building the future one widget at a time
+           Live from Nairobi • Building the future one widget at a time
         </div>
       </div>
     </div>

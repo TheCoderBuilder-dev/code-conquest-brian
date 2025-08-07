@@ -80,10 +80,10 @@ const TypingGame = () => {
   };
 
   const getTypingLevel = () => {
-    if (wpm >= 70) return { level: "🚀 CODING NINJA", color: "text-fire" };
-    if (wpm >= 50) return { level: "⚡ SPEED DEMON", color: "text-accent" };
-    if (wpm >= 30) return { level: "💻 DEVELOPER", color: "text-primary" };
-    return { level: "🌱 LEARNER", color: "text-muted-foreground" };
+    if (wpm >= 70) return { level: " CODING NINJA", color: "text-fire" };
+    if (wpm >= 50) return { level: " SPEED DEMON", color: "text-accent" };
+    if (wpm >= 30) return { level: " DEVELOPER", color: "text-primary" };
+    return { level: " LEARNER", color: "text-muted-foreground" };
   };
 
   return (
@@ -186,7 +186,7 @@ const TypingGame = () => {
             </div>
             {wpm > bestWpm - 5 && (
               <div className="text-sm text-accent font-medium">
-                🔥 Excellent performance! You're coding fast!
+                 Excellent performance! You're coding fast!
               </div>
             )}
           </div>
@@ -196,7 +196,7 @@ const TypingGame = () => {
       {/* Footer */}
       <div className="mt-4 text-center">
         <div className="text-xs text-muted-foreground">
-          ⌨️ Practice makes perfect • Keep grinding!
+           Practice makes perfect • Keep grinding!
         </div>
       </div>
     </div>

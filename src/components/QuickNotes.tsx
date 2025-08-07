@@ -138,7 +138,7 @@ const QuickNotes = () => {
                     : 'bg-muted/50 text-muted-foreground hover:bg-muted'
                 }`}
               >
-                {type === 'idea' ? '💡 Idea' : type === 'code' ? '💻 Code' : '🎯 Todo'}
+                {type === 'idea' ? ' Idea' : type === 'code' ? ' Code' : ' Todo'}
               </button>
             ))}
           </div>
@@ -227,7 +227,7 @@ const QuickNotes = () => {
       {/* Footer */}
       <div className="mt-3 text-center">
         <div className="text-xs text-muted-foreground">
-          💭 Creativity captured • Innovation documented
+           Creativity captured • Innovation documented
         </div>
       </div>
     </div>

@@ -24,10 +24,10 @@ const Navigation = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/brian', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/TheCoderBuilder-dev', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com/in/brian-munene', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:brian@example.com', label: 'Email' },
-    { icon: Phone, href: 'https://wa.me/254700000000', label: 'WhatsApp' },
+    { icon: Mail, href: 'mailto:brianinesh@gmail.com', label: 'Email' },
+    { icon: Phone, href: 'https://wa.me/254748665079', label: 'WhatsApp' },
   ];
 
   const scrollToSection = (href: string) => {

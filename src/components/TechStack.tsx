@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 interface TechItem {
   name: string;
-  icon: string;
   level: number;
   description: string;
   firstUsed: string;
@@ -12,70 +11,60 @@ interface TechItem {
 const techStack: TechItem[] = [
   {
     name: "Python",
-    icon: "🐍",
     level: 95,
     description: "Backend beast mode - Flask, SQLAlchemy, APIs",
     firstUsed: "Started with basic scripts, now building full systems"
   },
   {
     name: "React",
-    icon: "🔥",
     level: 90,
     description: "Frontend fire - Components, hooks, state management",
     firstUsed: "From HTML to modern React mastery"
   },
   {
     name: "Flask",
-    icon: "🚀",
     level: 90,
     description: "My ride-or-die for web APIs and backends",
     firstUsed: "First real framework love - built Deliveroo with it"
   },
   {
     name: "SQLAlchemy",
-    icon: "🗄️",
     level: 85,
     description: "Database ORM magic - complex relationships made easy",
     firstUsed: "Game changer for database management"
   },
   {
     name: "JavaScript",
-    icon: "⚡",
     level: 88,
     description: "The language that powers the web",
     firstUsed: "From simple DOM manipulation to full apps"
   },
   {
     name: "TypeScript",
-    icon: "💎",
     level: 80,
     description: "JavaScript with superpowers and type safety",
     firstUsed: "Made my code bulletproof and professional"
   },
   {
     name: "Google Maps API",
-    icon: "🗺️",
     level: 85,
     description: "Location services for Deliveroo tracking system",
     firstUsed: "Integrated real-time parcel tracking"
   },
   {
     name: "SendGrid",
-    icon: "💌",
     level: 80,
     description: "Email automation and notifications",
     firstUsed: "Professional email handling for apps"
   },
   {
     name: "Git & GitHub",
-    icon: "🔧",
     level: 85,
     description: "Version control and collaboration",
     firstUsed: "Essential for any serious development"
   },
   {
-    name: "AWS/Cloud",
-    icon: "☁️",
+    name: "AWS/Cloud",   
     level: 75,
     description: "Deployment and cloud infrastructure",
     firstUsed: "Scaling apps beyond localhost"
@@ -89,7 +78,7 @@ const TechStack = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold hero-text mb-6">
-            Tech Arsenal 🛠️
+            Tech Arsenal 
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             My weapons of choice for building digital experiences that actually work and scale
@@ -108,7 +97,7 @@ const TechStack = () => {
                 {/* Tech Header */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <span className="text-3xl">{tech.icon}</span>
+                    <span className="text-3xl"></span>
                     <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                       {tech.name}
                     </h3>
@@ -139,7 +128,7 @@ const TechStack = () => {
                 {/* Fun Fact - Hidden by default, shown on hover */}
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="text-xs text-primary-glow font-mono bg-muted/50 rounded p-2 border-l-2 border-primary">
-                    💡 {tech.firstUsed}
+                     {tech.firstUsed}
                   </div>
                 </div>
               </CardContent>
@@ -151,13 +140,13 @@ const TechStack = () => {
         <div className="text-center mt-16">
           <div className="glass rounded-xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-primary">
-              Always Learning, Always Growing 📈
+              Always Learning, Always Growing 
             </h3>
             
             {/* Current Learning */}
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div className="text-left p-4 bg-muted/20 rounded-lg">
-                <h4 className="font-semibold text-accent mb-2">🧠 Currently Learning</h4>
+                <h4 className="font-semibold text-accent mb-2"> Currently Learning</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• AI/ML integration for web apps</li>
                   <li>• Advanced cloud architecture patterns</li>
@@ -166,7 +155,7 @@ const TechStack = () => {
                 </ul>
               </div>
               <div className="text-left p-4 bg-muted/20 rounded-lg">
-                <h4 className="font-semibold text-fire mb-2">🎯 Next on the List</h4>
+                <h4 className="font-semibold text-fire mb-2"> Next on the List</h4>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• DevOps & CI/CD mastery</li>
                   <li>• System design & architecture</li>

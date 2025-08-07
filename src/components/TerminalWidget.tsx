@@ -11,19 +11,19 @@ const TerminalWidget = () => {
     'help': [
       'Available commands:',
       '  status    - Current project status',
-      '  coffee    - Coffee consumption today ☕',
+      '  coffee    - Coffee consumption today ',
       '  mood      - How I\'m feeling right now',
       '  projects  - What I\'m working on',
       '  playlist  - Current coding music 🎵',
       '  clear     - Clear terminal',
       '  whoami    - About Brian'
     ],
-    'status': ['🔥 Currently: Building the future, one line at a time', '📍 Status: Caffeinated and ready to code'],
-    'coffee': ['☕ Coffee count today: 4 cups (and counting...)', '⚡ Energy level: MAXIMUM OVERDRIVE'],
-    'mood': ['😤 Feeling: UNSTOPPABLE', '💪 Confidence: Through the roof', '🎯 Focus: Laser sharp'],
-    'projects': ['🚀 Deliveroo v2.0 - Adding real-time chat', '💻 Personal portfolio - You\'re looking at it!', '🎮 Secret gaming project - Stay tuned...'],
-    'playlist': ['🎵 Now playing: Lofi Hip Hop Radio 24/7', '🎧 Vibe: Productive coding mode activated'],
-    'whoami': ['👨🏽‍💻 Brian Munene', '🎯 18-year-old full stack developer', '📍 Nairobi, Kenya 🇰🇪', '💡 Mission: Millionaire by 22'],
+    'status': [' Currently: Building my Portfolio, one line at a time', ' Status: Caffeinated and ready to code'],
+    'coffee': [' Coffee count today: 4 cups (and counting...)', ' Energy level: MAXIMUM OVERDRIVE'],
+    'mood': [' Feeling: UNSTOPPABLE', ' Confidence: Through the roof', ' Focus: Laser sharp'],
+    'projects': [' Deliveroo v2.0 - Adding real-time chat', ' Personal portfolio - You\'re looking at it!', ' Secret gaming project - Stay tuned...'],
+    'playlist': [' Now playing: RnB Radio 24/7', ' Vibe: Productive coding mode activated'],
+    'whoami': [' Brian Munene', ' 18-year-old full stack developer', '📍 Nairobi, Kenya 🇰🇪', ' Mission: Millionaire by 22'],
     'clear': []
   };
 

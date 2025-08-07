@@ -23,7 +23,7 @@ const projects: Project[] = [
   {
     id: "deliveroo",
     title: "Deliveroo",
-    emoji: "🔥",
+    emoji: "",
     description: "Full-stack parcel tracking system with Google Maps integration",
     longDescription: "A comprehensive parcel delivery system with real-time tracking, cost calculation logic, and role-based authentication. Features admin dashboard, customer portal, and delivery management.",
     role: "Lead Developer - Handled backend & Google Maps integration",
@@ -42,7 +42,7 @@ const projects: Project[] = [
   {
     id: "mad-carts",
     title: "Mad-Carts",
-    emoji: "🛒",
+    emoji: "",
     description: "E-commerce backend with advanced cart management",
     longDescription: "Robust e-commerce API with UUID-based cart system, inventory management, and payment integration. Built for scalability and performance.",
     role: "Backend Architect - Designed cart UUID system & API structure",
@@ -60,7 +60,7 @@ const projects: Project[] = [
   {
     id: "late-show-api",
     title: "Late Show API",
-    emoji: "🎬",
+    emoji: "",
     description: "Guest management system with cascading operations",
     longDescription: "API for managing TV show guests with complex relationships and cascading delete operations. Features episode management and guest scheduling.",
     role: "API Developer - Implemented cascading deletes & data relationships",
@@ -78,7 +78,7 @@ const projects: Project[] = [
   {
     id: "freebie-tracker",
     title: "Freebie Tracker",
-    emoji: "🎁",
+    emoji: "",
     description: "Developer gift and resource management system",
     longDescription: "A system for tracking developer freebies, resources, and opportunities. Features categorization, expiry tracking, and sharing capabilities.",
     role: "Full-Stack Developer - Complete system design & implementation",
@@ -89,7 +89,7 @@ const projects: Project[] = [
       "Community sharing features",
       "Mobile-responsive design"
     ],
-    githubUrl: "https://github.com/brian/freebie-tracker",
+    githubUrl: "https://github.com/TheCoderBuilder-dev/freebie-tracker",
     liveUrl: "https://freebie-tracker.vercel.app",
     status: "completed",
     impact: "Helps 200+ developers find resources"
@@ -97,7 +97,7 @@ const projects: Project[] = [
   {
     id: "deepwoken-planner",
     title: "Deepwoken Build Planner",
-    emoji: "👾",
+    emoji: "",
     description: "Gaming tool for character build optimization (Concept)",
     longDescription: "Interactive build planner for the game Deepwoken, allowing players to theory-craft character builds with stat optimization and build sharing.",
     role: "Concept & Design - Future personal project",
@@ -138,7 +138,7 @@ const ProjectsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold hero-text mb-6">
-            Brian's Lab 💼
+            Brian's Lab 
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of legendary works that solve real problems and move the digital world forward
@@ -264,7 +264,7 @@ const ProjectsSection = () => {
         <div className="text-center mt-16">
           <div className="glass rounded-xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="hero-text">Want to See More? 🚀</span>
+              <span className="hero-text">Want to See More? </span>
             </h3>
             <p className="text-muted-foreground mb-6">
               These are just the highlights! I'm constantly building, experimenting, and shipping new ideas. 

@@ -8,11 +8,11 @@ const AboutSection = () => {
   const [activeTab, setActiveTab] = useState("origin");
 
   const achievements = [
-    { icon: "🎓", title: "KCSE A-", description: "Strong academic foundation" },
-    { icon: "🏆", title: "Moringa Graduate", description: "Phase 1-4 Software Engineering" },
+    { icon: "", title: "KCSE A-", description: "Strong academic foundation" },
+    { icon: "", title: "Moringa Graduate", description: "Phase 1-4 Software Engineering" },
     { icon: "", title: "Strathmore Student", description: "Currently pursuing tech degree" },
-    { icon: "📜", title: "GitHub Student Pack", description: "Access to premium dev tools" },
-    { icon: "🔧", title: "Cisco IT Essentials", description: "Networking fundamentals certified" },
+    { icon: "", title: "GitHub Student Pack", description: "Access to premium dev tools" },
+    { icon: "", title: "Cisco IT Essentials", description: "Networking fundamentals certified" },
     { icon: "", title: "1K+ Views", description: "Growing social media presence" }
   ];
 
@@ -49,10 +49,10 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold hero-text mb-6">
-            The Developer Behind the Code 🧬
+            The Developer Behind the Code 
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From KCSE A- to coding demon mode - the journey of a young visionary building his legacy
+            From KCSE A- to coding demon - the journey of a young visionary building his legacy
           </p>
         </div>
 
@@ -78,7 +78,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <Card className="glass border-border/50">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4 text-primary">The Beginning 🌱</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-primary">The Beginning </h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
                       Started my journey with a solid <span className="text-accent font-semibold">KCSE A-</span>, 
@@ -92,7 +92,7 @@ const AboutSection = () => {
                     </p>
                     <div className="flex items-center gap-2 mt-4">
                       <MapPin size={16} className="text-accent" />
-                      <span className="font-medium">Nairobi, Kenya 🇰🇪 - Where dreams meet execution</span>
+                      <span className="font-medium">Nairobi, Kenya 🇰🇪 - Where code meet execution</span>
                     </div>
                   </div>
                 </CardContent>
@@ -100,10 +100,10 @@ const AboutSection = () => {
 
               <Card className="glass border-border/50">
                 <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold mb-4 text-fire">The Vision 🚀</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-fire">The Vision </h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      Not just another developer - I'm building to solve real problems. Every line of code 
+                      Not just another developer, I'm building to solve real problems. Every line of code 
                       has purpose, every project moves the needle forward.
                     </p>
                     <div className="bg-muted/50 rounded-lg p-4 border-l-4 border-primary">
@@ -111,7 +111,7 @@ const AboutSection = () => {
                       <ul className="space-y-1 text-sm">
                         <li>• <strong>Quality over Quantity</strong> - Every project must solve a real problem</li>
                         <li>• <strong>Continuous Learning</strong> - Technology evolves, so do I</li>
-                        <li>• <strong>Impact First</strong> - Build things that matter and last</li>
+                        <li>• <strong>Impact First</strong> - Build things that matter</li>
                         <li>• <strong>Kenya to the World</strong> - Representing East African innovation</li>
                       </ul>
                     </div>
@@ -122,7 +122,7 @@ const AboutSection = () => {
 
             {/* Achievements Grid */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-center">Achievements Unlocked 🏆</h3>
+              <h3 className="text-2xl font-bold mb-6 text-center">Achievements Unlocked </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {achievements.map((achievement, index) => (
                   <Card key={index} className="glass border-border/50 hover:border-primary/50 transition-all duration-300 hover:scale-105 text-center">
@@ -140,7 +140,7 @@ const AboutSection = () => {
           {/* The Grind Tab */}
           <TabsContent value="grind" className="space-y-8">
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold hero-text mb-4">Moringa School Journey 🎓</h3>
+              <h3 className="text-3xl font-bold hero-text mb-4">Moringa School Journey </h3>
               <p className="text-muted-foreground">A systematic approach to mastering full-stack development</p>
             </div>
 
@@ -170,7 +170,7 @@ const AboutSection = () => {
               <CardContent className="p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <GraduationCap className="text-primary" size={24} />
-                  <h3 className="text-2xl font-bold">Strathmore University Life 📚</h3>
+                  <h3 className="text-2xl font-bold">Strathmore University Life </h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -200,7 +200,7 @@ const AboutSection = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Calendar className="text-primary" size={24} />
-                    <h3 className="text-2xl font-bold">Currently Building 🔨</h3>
+                    <h3 className="text-2xl font-bold">Currently Building </h3>
                   </div>
                   <div className="space-y-4">
                     <div className="bg-muted/50 rounded-lg p-4">
@@ -230,7 +230,7 @@ const AboutSection = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center gap-3 mb-6">
                     <Music className="text-accent" size={24} />
-                    <h3 className="text-2xl font-bold">Beyond Code 🎵</h3>
+                    <h3 className="text-2xl font-bold">Beyond Code</h3>
                   </div>
                   <div className="space-y-6">
                     {/* Spotify Widget Placeholder */}
@@ -240,7 +240,7 @@ const AboutSection = () => {
                         <span className="font-semibold">Currently Playing</span>
                       </div>
                       <div className="text-sm text-muted-foreground">
-                        🎵 Lo-fi Hip Hop - Perfect coding vibes
+                        🎵 RnB - Perfect for coding
                       </div>
                     </div>
 
@@ -252,19 +252,19 @@ const AboutSection = () => {
                       </div>
                       <div className="grid grid-cols-2 gap-3">
                         <div className="bg-muted/50 rounded-lg p-3 text-center">
-                          <div className="text-lg font-bold text-primary">📱</div>
+                          <div className="text-lg font-bold text-primary"></div>
                           <div className="text-xs text-muted-foreground">TikTok Tech Tips</div>
                         </div>
                         <div className="bg-muted/50 rounded-lg p-3 text-center">
-                          <div className="text-lg font-bold text-accent">🎙️</div>
+                          <div className="text-lg font-bold text-accent"></div>
                           <div className="text-xs text-muted-foreground">Podcast Clips</div>
                         </div>
                         <div className="bg-muted/50 rounded-lg p-3 text-center">
-                          <div className="text-lg font-bold text-fire">📺</div>
+                          <div className="text-lg font-bold text-fire"></div>
                           <div className="text-xs text-muted-foreground">YouTube Channel</div>
                         </div>
                         <div className="bg-muted/50 rounded-lg p-3 text-center">
-                          <div className="text-lg font-bold text-secondary">💰</div>
+                          <div className="text-lg font-bold text-secondary"></div>
                           <div className="text-xs text-muted-foreground">Whop Earnings</div>
                         </div>
                       </div>
@@ -274,8 +274,8 @@ const AboutSection = () => {
                     <div className="space-y-2">
                       <h4 className="font-semibold text-primary">Podcast Shows:</h4>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>🎭 "Comedy & Chaos" - Tech humor and industry commentary</li>
-                        <li>💪 "Motivation & Hustle" - Entrepreneurship and mindset</li>
+                        <li> "Comedy & Chaos" - Tech humor and industry commentary</li>
+                        <li> "Motivation & Hustle" - Entrepreneurship and mindset</li>
                       </ul>
                     </div>
                   </div>
@@ -292,7 +292,7 @@ const AboutSection = () => {
                 </div>
                 <p className="text-muted-foreground">
                   Currently building the next generation of web applications while balancing university life. 
-                  Always open to collaboration opportunities and interesting projects! 🚀
+                  Always open to collaboration opportunities and interesting projects!
                 </p>
               </CardContent>
             </Card>

@@ -16,19 +16,19 @@ const CoffeeTracker = () => {
   };
 
   const getEnergyStatus = () => {
-    if (energyLevel >= 80) return { text: "🚀 MAXIMUM OVERDRIVE", color: "text-fire" };
-    if (energyLevel >= 60) return { text: "⚡ High Performance", color: "text-accent" };
-    if (energyLevel >= 40) return { text: "☕ Need Refuel", color: "text-primary" };
-    return { text: "😴 Low Battery", color: "text-muted-foreground" };
+    if (energyLevel >= 80) return { text: " MAXIMUM OVERDRIVE", color: "text-fire" };
+    if (energyLevel >= 60) return { text: " High Performance", color: "text-accent" };
+    if (energyLevel >= 40) return { text: " Need Refuel", color: "text-primary" };
+    return { text: " Low Battery", color: "text-muted-foreground" };
   };
 
   const getCoffeeAdvice = () => {
     const hoursSinceLastCoffee = (Date.now() - lastCoffee.getTime()) / (1000 * 60 * 60);
     
-    if (hoursSinceLastCoffee > 4) return "Time for a coffee break! ☕";
-    if (todayCoffee >= 6) return "Maybe switch to water? 💧";
-    if (todayCoffee < 2) return "Need more fuel for coding! 🔥";
-    return "Perfect coffee balance! 👌";
+    if (hoursSinceLastCoffee > 4) return "Time for a coffee break! ";
+    if (todayCoffee >= 6) return "Maybe switch to water?";
+    if (todayCoffee < 2) return "Need more fuel for coding! ";
+    return "Perfect coffee balance! ";
   };
 
   const formatTimeAgo = (date: Date) => {
@@ -39,8 +39,8 @@ const CoffeeTracker = () => {
     return `${hours} hours ago`;
   };
 
-  const coffeeEmojis = ["☕", "🔥", "⚡", "💪", "🚀"];
-  const currentEmoji = coffeeEmojis[Math.min(todayCoffee - 1, coffeeEmojis.length - 1)] || "☕";
+  const coffeeEmojis = ["", "", "", "", ""];
+  const currentEmoji = coffeeEmojis[Math.min(todayCoffee - 1, coffeeEmojis.length - 1)] || "";
 
   return (
     <div className="glass rounded-xl p-6 border border-border/50">
@@ -122,7 +122,7 @@ const CoffeeTracker = () => {
                   : 'bg-muted/30 text-muted-foreground'
               }`}
             >
-              {i < todayCoffee ? '☕' : '○'}
+              {i < todayCoffee ? '' : '○'}
             </div>
           ))}
         </div>
@@ -131,14 +131,14 @@ const CoffeeTracker = () => {
       {/* Advice */}
       <div className="mt-4 p-3 bg-primary/10 rounded-lg border-l-4 border-primary">
         <div className="text-sm text-primary font-medium">
-          💡 {getCoffeeAdvice()}
+           {getCoffeeAdvice()}
         </div>
       </div>
 
       {/* Footer */}
       <div className="mt-4 text-center">
         <div className="text-xs text-muted-foreground">
-          ☕ Powered by caffeine • Built with passion
+           Powered by caffeine • Built with passion
         </div>
       </div>
     </div>

@@ -59,10 +59,10 @@ const ToDoWidget = () => {
 
   const getPriorityEmoji = (priority: string) => {
     switch (priority) {
-      case 'high': return '🔥';
-      case 'medium': return '⚡';
-      case 'low': return '📝';
-      default: return '📝';
+      case 'high': return '';
+      case 'medium': return '';
+      case 'low': return '';
+      default: return '';
     }
   };
 
@@ -189,7 +189,7 @@ const ToDoWidget = () => {
       {/* Motivational Footer */}
       <div className="mt-4 text-center">
         <div className="text-xs text-primary font-mono">
-          {progressPercentage === 100 ? "🎉 All done! Time for coffee ☕" : "💪 Keep pushing forward!"}
+          {progressPercentage === 100 ? " All done! Time for coffee " : " Keep pushing forward!"}
         </div>
       </div>
     </div>

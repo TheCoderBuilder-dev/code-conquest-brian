@@ -94,7 +94,7 @@ const SpotifyWidget = () => {
 
         {/* Footer */}
         <div className="text-xs text-muted-foreground text-center mt-3">
-          🎧 Coded to the beat • Brian's coding soundtrack
+           Brian's coding soundtrack
         </div>
       </div>
     </div>

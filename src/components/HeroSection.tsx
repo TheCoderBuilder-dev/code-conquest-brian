@@ -34,17 +34,17 @@ const HeroSection = () => {
           {/* Floating Parcel Icons */}
           <div className="absolute top-1/4 left-1/4 animate-float">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center glow-primary">
-              📦
+              
             </div>
           </div>
           <div className="absolute top-3/4 right-1/3 animate-float" style={{animationDelay: '2s'}}>
             <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center glow-primary">
-              🚚
+              
             </div>
           </div>
           <div className="absolute top-1/2 right-1/4 animate-float" style={{animationDelay: '4s'}}>
             <div className="w-8 h-8 bg-fire rounded-lg flex items-center justify-center glow-primary">
-              🌍
+              
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const HeroSection = () => {
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text leading-tight">
-          Hi, I'm Brian 👨🏽‍💻
+          Hi, I'm Brian 
         </h1>
         
         <div className="text-xl md:text-2xl text-muted-foreground mb-4 space-y-2">
@@ -82,7 +82,7 @@ const HeroSection = () => {
             <span className="text-primary">•</span>
             <span>Product Builder</span>
             <span className="text-primary">•</span>
-            <span>Visionary Coder</span>
+            <span>Coder</span>
           </div>
           <div className="flex items-center justify-center gap-2 text-lg">
             <MapPin className="text-accent" size={20} />
@@ -91,11 +91,11 @@ const HeroSection = () => {
         </div>
 
         <p className="text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto font-light">
-          "I build web apps that move things. And people."
+          "I build web apps that inspire"
         </p>
 
         <div className="text-lg text-primary-glow mb-6 font-mono">
-          18 years old • Aiming to be a millionaire by 22 🚀
+          18 years old • Aiming to be a millionaire by 22 
         </div>
 
         {/* Human Touch - Quick Status */}
@@ -108,7 +108,7 @@ const HeroSection = () => {
             <span className="text-sm text-primary">Building something epic</span>
           </div>
           <div className="text-xs text-muted-foreground text-center mt-2">
-            ☕ 4 coffees deep • 🎵 Lofi beats • 💻 In the zone
+             4 coffees deep • RnB •  In the zone
           </div>
         </div>
 

@@ -9,7 +9,7 @@ const WeatherWidget = () => {
     humidity: 65,
     windSpeed: 8,
     uvIndex: 6,
-    icon: "⛅"
+    icon: ""
   });
 
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -31,10 +31,10 @@ const WeatherWidget = () => {
 
   const getCodingCondition = () => {
     const hour = currentTime.getHours();
-    if (hour >= 22 || hour <= 5) return "🌙 Perfect for night coding";
-    if (hour >= 6 && hour <= 11) return "☀️ Morning productivity peak";
-    if (hour >= 12 && hour <= 17) return "⚡ Afternoon coding grind";
-    return "🌅 Evening flow state";
+    if (hour >= 22 || hour <= 5) return " Perfect for night coding";
+    if (hour >= 6 && hour <= 11) return " Morning productivity peak";
+    if (hour >= 12 && hour <= 17) return " Afternoon coding grind";
+    return " Evening flow state";
   };
 
   return (
@@ -98,7 +98,7 @@ const WeatherWidget = () => {
       {/* Fun Fact */}
       <div className="mt-3 p-3 bg-primary/10 rounded-lg">
         <div className="text-xs text-primary">
-          💡 Perfect weather for building the next big thing! ☕
+           Perfect weather for building the next big thing!
         </div>
       </div>
     </div>

@@ -10,11 +10,11 @@ interface Commit {
 
 const GitHubActivity = () => {
   const [commits] = useState<Commit[]>([
-    { message: "✨ Add real-time parcel tracking to Deliveroo", time: "2 hours ago", repo: "deliveroo-v2", files: 7 },
-    { message: "🐛 Fix authentication bug in user dashboard", time: "5 hours ago", repo: "mad-carts", files: 3 },
-    { message: "🚀 Implement Google Maps integration", time: "1 day ago", repo: "deliveroo-v2", files: 12 },
-    { message: "💄 Update portfolio hero section styling", time: "1 day ago", repo: "portfolio", files: 4 },
-    { message: "🔧 Optimize database queries for better performance", time: "2 days ago", repo: "mad-carts", files: 8 }
+    { message: " Add real-time parcel tracking to Deliveroo", time: "2 hours ago", repo: "deliveroo-v2", files: 7 },
+    { message: " Fix authentication bug in user dashboard", time: "5 hours ago", repo: "mad-carts", files: 3 },
+    { message: " Implement Google Maps integration", time: "1 day ago", repo: "deliveroo-v2", files: 12 },
+    { message: " Update portfolio hero section styling", time: "1 day ago", repo: "portfolio", files: 4 },
+    { message: " Optimize database queries for better performance", time: "2 days ago", repo: "mad-carts", files: 8 }
   ]);
 
   const [stats] = useState({
@@ -56,7 +56,7 @@ const GitHubActivity = () => {
         </div>
         <div className="text-center">
           <div className="text-2xl font-bold text-fire">{stats.starsEarned}</div>
-          <div className="text-xs text-muted-foreground">Stars ⭐</div>
+          <div className="text-xs text-muted-foreground">Stars </div>
         </div>
       </div>
 
@@ -104,7 +104,7 @@ const GitHubActivity = () => {
             <span className="text-sm font-medium text-foreground">Current Mood:</span>
           </div>
           <div className="text-sm text-primary font-mono">
-            {new Date().getHours() > 18 ? "🌙 Night owl mode" : "☀️ Productive vibes"}
+            {new Date().getHours() > 18 ? " Night owl mode" : " Productive vibes"}
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@ const GitHubActivity = () => {
       {/* Footer */}
       <div className="mt-4 pt-3 border-t border-border/20 text-center">
         <div className="text-xs text-muted-foreground">
-          💻 Building the future • One commit at a time
+           Building the future • One commit at a time
         </div>
       </div>
     </div>

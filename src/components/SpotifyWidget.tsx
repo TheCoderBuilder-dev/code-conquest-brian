@@ -7,11 +7,11 @@ const SpotifyWidget = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const currentTrack = {
-    title: "Lofi Study Beats",
-    artist: "ChilledCow",
-    album: "Productivity Vibes",
+    title: "What You Heard",
+    artist: "Sonder",
+    album: "",
     duration: 240,
-    cover: "🎵"
+    cover: ""
   };
 
   useEffect(() => {

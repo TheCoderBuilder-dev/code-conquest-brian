@@ -41,7 +41,7 @@ const Index = () => {
             </p>
             <div className="glass rounded-xl p-8">
               <p className="text-muted-foreground mb-4">Contact form coming soon...</p>
-              <p className="text-primary font-mono">brian@example.com | +254 700 000 000</p>
+              <p className="text-primary font-mono">brianinesh@gmail.com | +254 7486 5079</p>
             </div>
           </div>
         </section>

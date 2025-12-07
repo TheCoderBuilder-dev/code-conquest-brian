@@ -25,7 +25,7 @@ const Navigation = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/TheCoderBuilder-dev', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/brian-munene', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/brian-munene-890993346/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:brianinesh@gmail.com', label: 'Email' },
     { icon: Phone, href: 'https://wa.me/254748665079', label: 'WhatsApp' },
   ];

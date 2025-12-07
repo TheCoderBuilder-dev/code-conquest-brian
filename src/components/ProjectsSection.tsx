@@ -17,13 +17,14 @@ interface Project {
   liveUrl?: string;
   status: "completed" | "in-progress" | "concept";
   impact: string;
+  category: "api" | "landing-page" | "full-stack" | "concept";
 }
 
 const projects: Project[] = [
   {
     id: "deliveroo",
     title: "Deliveroo",
-    emoji: "",
+    emoji: "📦",
     description: "Full-stack parcel tracking system with Google Maps integration",
     longDescription: "A comprehensive parcel delivery system with real-time tracking, cost calculation logic, and role-based authentication. Features admin dashboard, customer portal, and delivery management.",
     role: "Lead Developer - Handled backend & Google Maps integration",
@@ -37,12 +38,13 @@ const projects: Project[] = [
     githubUrl: "https://github.com/brian/deliveroo",
     liveUrl: "https://deliveroo-demo.com",
     status: "completed",
-    impact: "Streamlined delivery operations for 50+ local businesses"
+    impact: "Streamlined delivery operations for 50+ local businesses",
+    category: "full-stack"
   },
   {
     id: "mad-carts",
-    title: "Mad-Carts",
-    emoji: "",
+    title: "Mad-Carts API",
+    emoji: "🛒",
     description: "E-commerce backend with advanced cart management",
     longDescription: "Robust e-commerce API with UUID-based cart system, inventory management, and payment integration. Built for scalability and performance.",
     role: "Backend Architect - Designed cart UUID system & API structure",
@@ -55,12 +57,13 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/brian/mad-carts",
     status: "completed",
-    impact: "Powers 3 active e-commerce platforms"
+    impact: "Powers 3 active e-commerce platforms",
+    category: "api"
   },
   {
     id: "late-show-api",
     title: "Late Show API",
-    emoji: "",
+    emoji: "📺",
     description: "Guest management system with cascading operations",
     longDescription: "API for managing TV show guests with complex relationships and cascading delete operations. Features episode management and guest scheduling.",
     role: "API Developer - Implemented cascading deletes & data relationships",
@@ -73,12 +76,13 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/brian/late-show-api",
     status: "completed",
-    impact: "Used by content creators for show planning"
+    impact: "Used by content creators for show planning",
+    category: "api"
   },
   {
     id: "freebie-tracker",
     title: "Freebie Tracker",
-    emoji: "",
+    emoji: "🎁",
     description: "Developer gift and resource management system",
     longDescription: "A system for tracking developer freebies, resources, and opportunities. Features categorization, expiry tracking, and sharing capabilities.",
     role: "Full-Stack Developer - Complete system design & implementation",
@@ -92,13 +96,34 @@ const projects: Project[] = [
     githubUrl: "https://github.com/TheCoderBuilder-dev/freebie-tracker",
     liveUrl: "https://freebie-tracker.vercel.app",
     status: "completed",
-    impact: "Helps 200+ developers find resources"
+    impact: "Helps 200+ developers find resources",
+    category: "full-stack"
+  },
+  {
+    id: "portfolio-site",
+    title: "Portfolio Website",
+    emoji: "🚀",
+    description: "Modern personal portfolio with interactive widgets",
+    longDescription: "This very website you're viewing! A cyber-themed portfolio featuring glassmorphism design, interactive widgets, and smooth animations.",
+    role: "Solo Creator - Full design & development",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "Vite", "shadcn/ui"],
+    highlights: [
+      "Custom cyber/galactic dark theme",
+      "Interactive dashboard with widgets",
+      "Smooth scroll animations",
+      "Fully responsive design"
+    ],
+    githubUrl: "https://github.com/TheCoderBuilder-dev/code-conquest-brian",
+    liveUrl: "https://thecoderbuilder-dev.github.io/code-conquest-brian",
+    status: "completed",
+    impact: "Showcasing skills to potential clients & employers",
+    category: "landing-page"
   },
   {
     id: "deepwoken-planner",
     title: "Deepwoken Build Planner",
-    emoji: "",
-    description: "Gaming tool for character build optimization (Concept)",
+    emoji: "🎮",
+    description: "Gaming tool for character build optimization",
     longDescription: "Interactive build planner for the game Deepwoken, allowing players to theory-craft character builds with stat optimization and build sharing.",
     role: "Concept & Design - Future personal project",
     techStack: ["React", "TypeScript", "Next.js", "Prisma", "PostgreSQL"],
@@ -109,7 +134,8 @@ const projects: Project[] = [
       "Mobile gaming experience"
     ],
     status: "concept",
-    impact: "Potential to serve 10k+ gamers"
+    impact: "Potential to serve 10k+ gamers",
+    category: "concept"
   }
 ];
 
@@ -132,13 +158,16 @@ const ProjectsSection = () => {
     }
   };
 
+  // Show only first 4 projects as highlights
+  const featuredProjects = projects.slice(0, 4);
+
   return (
     <section className="py-20 bg-gradient-to-b from-muted/10 to-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold hero-text mb-6">
-            Brian's Lab 
+            Brian's Lab 🔬
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of legendary works that solve real problems and move the digital world forward
@@ -147,7 +176,7 @@ const ProjectsSection = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <Card 
               key={project.id}
               className="glass border-border/50 hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] group overflow-hidden"
@@ -264,15 +293,19 @@ const ProjectsSection = () => {
         <div className="text-center mt-16">
           <div className="glass rounded-xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="hero-text">Want to See More? </span>
+              <span className="hero-text">Want to See More? 🚀</span>
             </h3>
             <p className="text-muted-foreground mb-6">
-              These are just the highlights! I'm constantly building, experimenting, and shipping new ideas. 
-              Check out my GitHub for the full collection of projects and contributions.
+              These are just the highlights! Explore all my projects organized by category: APIs, Landing Pages, Full-Stack Apps, and Future Concepts.
             </p>
-            <Button className="bg-gradient-fire glow-primary">
-              <Github className="mr-2" size={20} />
-              Explore All Projects
+            <Button 
+              className="bg-gradient-fire glow-primary"
+              asChild
+            >
+              <a href="/code-conquest-brian/projects">
+                <Code2 className="mr-2" size={20} />
+                Explore All Projects
+              </a>
             </Button>
           </div>
         </div>

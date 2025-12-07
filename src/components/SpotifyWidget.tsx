@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Music, Play, Pause, SkipForward, Volume2 } from 'lucide-react';
+import { Music, Play, Pause, SkipForward, Volume2, X } from 'lucide-react';
 
 const SpotifyWidget = () => {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -46,6 +46,12 @@ const SpotifyWidget = () => {
           <Music className="text-accent" size={16} />
           <span className="text-sm font-medium text-muted-foreground">Now Playing</span>
           <div className="w-2 h-2 bg-accent rounded-full animate-pulse ml-auto"></div>
+          <button 
+            onClick={() => setIsVisible(false)}
+            className="p-1 hover:bg-muted/50 rounded-full transition-colors"
+          >
+            <X size={16} className="text-muted-foreground hover:text-foreground" />
+          </button>
         </div>
 
         {/* Track Info */}
